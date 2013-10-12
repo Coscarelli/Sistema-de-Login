@@ -11,7 +11,7 @@ public class CriarConexao {
 		try {
 			Class.forName("com.mysql.jdbc.Driver");
 			System.out.print("conectou");
-			return DriverManager.getConnection("jdbc:mysql://localhost/sistemaLoginBd");
+			return DriverManager.getConnection("jdbc:mysql://localhost/sistemaLoginBd","root","123");
 		}  catch (SQLException e) {
 			throw new SQLException(e);
 		}catch (ClassNotFoundException e1) {

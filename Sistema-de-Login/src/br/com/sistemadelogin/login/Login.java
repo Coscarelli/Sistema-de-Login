@@ -7,6 +7,7 @@ public class Login {
 	private int id;
 	private String usuario;
 	private String senha;
+	
 	public int getId() {
 		return id;
 	}
@@ -19,7 +20,7 @@ public class Login {
 	public void setUsuario(String usuario) {
 		this.usuario = usuario;
 	}
-	public String getSenha() {
+	public String getSenha() { 
 		return senha;
 	}
 	public void setSenha(String senha) {
