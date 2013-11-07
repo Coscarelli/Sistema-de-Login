@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  
+xmlns:web="http://java.sun.com/xml/ns/javaee"
+ xmlns="http://java.sun.com/xml/ns/javaee" 
+ xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" 
+ id="WebApp_ID" version="2.5">
   <display-name>Sistema-de-Login</display-name>
   <welcome-file-list>
     <welcome-file>login.jsp</welcome-file>
@@ -26,5 +30,15 @@
   <error-page>
     <error-code>500</error-code>
     <location>/errodeusuario.jsp</location>
-  </error-page>  
+  </error-page>
+  <servlet>
+    <description></description>
+    <display-name>CadastroLoginServlet</display-name>
+    <servlet-name>CadastroLoginServlet</servlet-name>
+    <servlet-class>br.com.sistemadelogin.login.CadastroLoginServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CadastroLoginServlet</servlet-name>
+    <url-pattern>/CadastroLogin</url-pattern>
+  </servlet-mapping>
 </web-app>
