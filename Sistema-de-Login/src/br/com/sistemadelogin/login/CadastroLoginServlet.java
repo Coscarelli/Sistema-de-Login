@@ -11,16 +11,11 @@ import javax.servlet.http.HttpServletResponse;
 
 import br.com.sistemadelogin.conexao.CriarConexao;
 
-/**
- * Servlet implementation class CadastroLoginServlet
- */
+
 public class CadastroLoginServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
-    /**
-     * @see HttpServlet#HttpServlet()
-     */
-    public CadastroLoginServlet() {
+     public CadastroLoginServlet() {
         super();
         
     }
@@ -29,8 +24,8 @@ public class CadastroLoginServlet extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		
-		String usuario = request.getParameter("usuario");
-		String senha = request.getParameter("senha");
+		String usuario = request.getParameter("txtUsuario");
+		String senha = request.getParameter("txtSenha");
 		
   Connection con;
 try {
